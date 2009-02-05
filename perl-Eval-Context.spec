@@ -1,5 +1,5 @@
 %define module   Eval-Context
-%define version    0.06
+%define version    0.07
 %define release    %mkrel 1
 
 Name:       perl-%{module}
@@ -8,9 +8,8 @@ Release:    %{release}
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Evalute perl code in context wraper
-Source:     http://www.cpan.org/modules/by-module/Eval/%{module}-%{version}.tar.gz
 Url:        http://search.cpan.org/dist/%{module}
-BuildRequires: perl-devel
+Source:     http://www.cpan.org/modules/by-module/Eval/%{module}-%{version}.tar.gz
 BuildRequires: perl(Data::Compare)
 BuildRequires: perl(Data::Dumper)
 BuildRequires: perl(Data::TreeDumper)
@@ -35,7 +34,6 @@ BuildRequires: perl(Test::Spelling)
 BuildRequires: perl(Test::Strict)
 BuildRequires: perl(Test::Warn)
 BuildRequires: perl(Module::Build::Compat)
-BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
@@ -54,6 +52,7 @@ in a safe compartment.
 %make
 
 %check
+export LC_ALL=C
 make test
 
 %install
@@ -68,4 +67,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/Eval
-
