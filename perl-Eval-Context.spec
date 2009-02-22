@@ -1,6 +1,6 @@
 %define module   Eval-Context
-%define version    0.07
-%define release    %mkrel 1
+%define version  0.07
+%define release  %mkrel 1
 
 Name:       perl-%{module}
 Version:    %{version}
@@ -28,13 +28,14 @@ BuildRequires: perl(Test::Distribution)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::NoWarnings)
 BuildRequires: perl(Test::Output)
-BuildRequires: perl(Test::Perl::Critic)
 BuildRequires: perl(Test::Pod)
 BuildRequires: perl(Test::Pod::Coverage)
 BuildRequires: perl(Test::Spelling)
 BuildRequires: perl(Test::Strict)
 BuildRequires: perl(Test::Warn)
+BuildRequires: perl(Test::Perl::Critic)
 BuildRequires: perl(Module::Build::Compat)
+BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
