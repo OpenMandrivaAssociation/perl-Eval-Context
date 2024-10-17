@@ -9,7 +9,7 @@ Epoch:		1
 Summary:	Evalute perl code in context wraper
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Eval/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
