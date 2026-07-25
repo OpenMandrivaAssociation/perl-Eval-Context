@@ -1,16 +1,16 @@
 %define upstream_name    Eval-Context
-%define upstream_version 0.09.11
+%define upstream_version v0.09.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 Epoch:		1
 
 Summary:	Evalute perl code in context wraper
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Eval/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Eval-Context
+Source0:	https://cpan.metacpan.org/authors/id/N/NK/NKH/Eval-Context-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
